@@ -118,3 +118,20 @@ function getDayType(day: Day): string {
 
 getDayType(Day.Monday);
 getDayType(Day.Sunday);
+
+async function squareAsync(n: number): Promise<number> {
+  const promise: Promise<number> = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (n > 0) {
+        resolve(n * n);
+      } else {
+        reject("Error: Negative number not allowed");
+      }
+    }, 1000);
+  });
+
+  return promise;
+}
+
+squareAsync(4).then(console.log);
+squareAsync(-3).catch(console.error);
