@@ -23,3 +23,10 @@ const books = [
 ];
 
 filterByRating(books);
+
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  return ([] as T[]).concat(...arrays);
+}
+
+concatenateArrays(["a", "b"], ["c"]);
+concatenateArrays([1, 2], [3, 4], [5]);
