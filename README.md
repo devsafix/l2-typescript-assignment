@@ -1,4 +1,4 @@
-# I'm learning TypeScript right now and writing down some of the things that confused me at first but now kinda make sense. This blog is about:
+# I'm learning TypeScript. I write a simple about:
 
 1. What are the differences between **Interfaces** and **Types** in TypeScript?
 2. How TypeScript helps in writing better code and keeping projects clean and easy to manage.
@@ -74,7 +74,7 @@ function double(n: number) {
   return n * 2;
 }
 
-double("5"); // Error: Argument of type 'string' is not assignable to parameter of type 'number'
+double("5"); // Error: because this is 'string'. Its expected 'number
 ```
 
 In JS this would just return `NaN`, which is super annoying. But TS gives error while writing!
@@ -93,7 +93,7 @@ type Book = {
 
 const myBook: Book = {
   title: "TS for Beginners",
-  author: "Me", // editor helps me here!
+  author: "Me",
 };
 ```
 
