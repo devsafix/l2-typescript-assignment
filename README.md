@@ -1,4 +1,4 @@
-# I'm learning TypeScript. I write a simple about:
+# I'm learning TypeScript. I write a simple blog about:
 
 1. What are the differences between **Interfaces** and **Types** in TypeScript?
 2. How TypeScript helps in writing better code and keeping projects clean and easy to manage.
